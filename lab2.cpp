@@ -27,7 +27,9 @@ int scan_int() // Получить тип данных integer
 			cin.ignore(32767, '\n');
 		}
 		else
+		{
 			return input_data;
+		}
 	}
 }
 
