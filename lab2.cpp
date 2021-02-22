@@ -8,7 +8,7 @@ double composition_function(int);
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-    cout << "Введите верхнюю границу(целое число): ";
+	cout << "Введите верхнюю границу(целое число): ";
 	int n = scan_int();
 	double result = composition_function(n);
 	cout << "\nПроизведение равно " << result;
