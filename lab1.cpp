@@ -1,8 +1,9 @@
-﻿// | Окольников Н. | Лабораторная 1 | Вариант 10 |
+// | Окольников Н. | Лабораторная 1 | Вариант 10 |
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-double acceleration(double h);
+double acceleration(double);
 double scan_double();
 
 int main()
@@ -20,7 +21,7 @@ double acceleration(double h) // Расчёт ускорения свободн�
 	double earth_weight = 5.96 * pow(10, 24);
 	double earth_radius = 6.37 * pow(10, 6);
 	double g = grav_constant * earth_weight / pow((earth_radius + h), 2);
-	return(g);
+	return g;
 }
 
 double scan_double() // Получить тип данных dobule
@@ -30,13 +31,15 @@ double scan_double() // Получить тип данных dobule
 		double input_data;
 		cin >> input_data;
 
-		if (cin.fail())  // Проверка на double
+		if (cin.fail() || input_data < 0)  // Проверка на double и на положительное число
 		{
 			cout << "\nВведено неверное значение. Повторите попытку: ";
 			cin.clear(); 
 			cin.ignore(32767, '\n'); 
 		}
-		else 
+		else
+		{
 			return input_data;
+		}
 	}
 }
