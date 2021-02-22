@@ -20,7 +20,7 @@ int scan_int() // Получить тип данных integer
 	{
 		int input_data;
 		cin >> input_data;
-		if (cin.fail()) // Проверка на integer
+		if (cin.fail() || input_data < 0) // Проверка на integer и положительное число
 		{
 			cout << "\nВведено неверное значение. Повторите попытку: ";
 			cin.clear();
