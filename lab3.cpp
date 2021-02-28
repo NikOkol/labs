@@ -60,7 +60,7 @@ int main()
 	{
 		sum_central_moment = pow((number_array[i] - sum_expectation), k) * chance_array[i];
 	}
-	cout << "\nПорядок момента = " << sum_central_moment;
+	cout << "\nЦентральный момент = " << sum_central_moment;
 	return 0;
 }
 
