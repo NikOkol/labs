@@ -82,9 +82,9 @@ void list_output(first_list* first_f, int n)
     {
         next = cur->next_first;
         cur_s = cur->to_second;
-        for (int j = 0; j < (17 - (cur->name.length())); j++)
+        for (int j = 0; j < 51; j++)
         {
-            cout << "---";
+            cout << "-";
         }
         cout << "\n" << i + 1 << ")   Имя: " << cur->name;
         for (int j = 0; j < (10- (cur->name.length())); j++)
@@ -92,14 +92,15 @@ void list_output(first_list* first_f, int n)
             cout << " ";
         }
         cout << " | Возраст: " << cur_s->age << "\n";
-        for (int j = 0; j < (17 - (cur->name.length())); j++)
+        for (int j = 0; j < 51; j++)
         {
-            cout << "---";
+            cout << "-";
         }
         cout << "\n";
         cur = next;
     }
 }
+
 
 
 int scan_natural_number() 
