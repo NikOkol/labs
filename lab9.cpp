@@ -103,32 +103,32 @@ void command_list(product * first) // Выбор действия
     {
         switch (choice)
         {
-        case 1:
+        case 1: // Краткий список
             show_short_list(n, first);
             cout << long_string.main_menu;
             choice = scan_natural();
             break;
-        case 2:
+        case 2: // Подробный список
             show_long_list(n, first);
             cout << long_string.main_menu;
             choice = scan_natural();
             break;
-        case 3:
+        case 3: // Добавить объект
             n = create_object(last, n, &last);
             cout << long_string.main_menu;
             choice = scan_natural();
             break;
-        case 4:
+        case 4: // Информация о конкретном объекте
             show_one_object(n, first);
             cout << long_string.main_menu;
             choice = scan_natural();
             break;
-        case 5:
+        case 5: // Редактирование объектов
             object_editing(n, first);
             cout << long_string.main_menu;
             choice = scan_natural();
             break;
-        case 6:
+        case 6: // Завершить программу
             going = false;
             clear_memory(n, first);
             break;
@@ -140,7 +140,7 @@ void command_list(product * first) // Выбор действия
     }
 }
 
-void show_short_list(int n, product* first) // Вывод краткого списка
+void show_short_list(int n, product* first) // Краткий список
 {
     product* current;
     current = first;
@@ -269,51 +269,51 @@ void object_editing(int n, product* first) // Редактирование об�
     {
         switch (choice)
         {
-        case 1:
+        case 1: // Название продукта
             cin.ignore(32767, '\n');
             getline(cin, current->product_name);
             cout << long_string.edit_menu;
             choice = scan_natural();
             break;
-        case 2:
+        case 2: // Производитель
             cin.ignore(32767, '\n');
             getline(cin, current->manufacturer);
             cout << long_string.edit_menu;
             choice = scan_natural();
             break;
-        case 3:
+        case 3: // Цена
             cin.ignore(32767, '\n');
             getline(cin, current->price);
             cout << long_string.edit_menu;
             choice = scan_natural();
             break;
-        case 4:
+        case 4: // Название магазина
             cin.ignore(32767, '\n');
             getline(cin, current->place_of_sale->shop_name);
             cout << long_string.edit_menu;
             choice = scan_natural();
             break;
-        case 5:
+        case 5: // Адрес магазина
             cin.ignore(32767, '\n');
             getline(cin, current->place_of_sale->address);
             cout << long_string.edit_menu;
             choice = scan_natural();
             break;
-        case 6:
+        case 6: // Часы работы магазина
             cin.ignore(32767, '\n');
             getline(cin, current->place_of_sale->working_hours);
             cout << long_string.edit_menu;
             choice = scan_natural();
             break;
-        case 7:
+        case 7: // Показать информацию о текущем объекте
             current->show_prod_info();
             cout << long_string.edit_menu;
             choice = scan_natural();
             break;
-        case 8:
+        case 8: // В главное меню
             going = false;
             break;
-        case 9:
+        case 9: // Сменить редактируемый объект
            cout << "Выберите номер объекта: ";
             k = scan_natural();
             while (k > n)
