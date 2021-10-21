@@ -1,7 +1,0 @@
-D:\Git\labs\CSharp_proj\CSharp_proj\bin\Debug\CSharp_proj.exe.config
-D:\Git\labs\CSharp_proj\CSharp_proj\bin\Debug\CSharp_proj.exe
-D:\Git\labs\CSharp_proj\CSharp_proj\bin\Debug\CSharp_proj.pdb
-D:\Git\labs\CSharp_proj\CSharp_proj\obj\Debug\CSharp_proj.csprojAssemblyReference.cache
-D:\Git\labs\CSharp_proj\CSharp_proj\obj\Debug\CSharp_proj.csproj.CoreCompileInputs.cache
-D:\Git\labs\CSharp_proj\CSharp_proj\obj\Debug\CSharp_proj.exe
-D:\Git\labs\CSharp_proj\CSharp_proj\obj\Debug\CSharp_proj.pdb
