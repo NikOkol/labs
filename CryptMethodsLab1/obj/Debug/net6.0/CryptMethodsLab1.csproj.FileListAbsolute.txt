@@ -1,0 +1,15 @@
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\bin\Debug\net6.0\CryptMethodsLab1.exe
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\bin\Debug\net6.0\CryptMethodsLab1.deps.json
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\bin\Debug\net6.0\CryptMethodsLab1.runtimeconfig.json
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\bin\Debug\net6.0\CryptMethodsLab1.dll
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\bin\Debug\net6.0\CryptMethodsLab1.pdb
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\CryptMethodsLab1.csproj.AssemblyReference.cache
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\CryptMethodsLab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\CryptMethodsLab1.AssemblyInfoInputs.cache
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\CryptMethodsLab1.AssemblyInfo.cs
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\CryptMethodsLab1.csproj.CoreCompileInputs.cache
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\CryptMethodsLab1.dll
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\refint\CryptMethodsLab1.dll
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\CryptMethodsLab1.pdb
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\CryptMethodsLab1.genruntimeconfig.cache
+D:\Git\CryptMethodsLab1\CryptMethodsLab1\obj\Debug\net6.0\ref\CryptMethodsLab1.dll
