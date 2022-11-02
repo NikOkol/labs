@@ -10,48 +10,48 @@ namespace CryptMethodsLab1
     {
         static Dictionary<char, int> Alphabet = new Dictionary<char, int>
         {
-                {'а', 0 },
-                {'б', 1 },
-                {'в', 2 },
-                {'г' ,3 },
-                {'д',4 },
-                {'е' ,5 },
-                {'ж',6},
-                {'з' ,7},
-                {'и' ,8},
-                {'й' ,9},
-                {'к',10 },
-                {'л' ,11},
-                {'м' ,12},
-                {'н' ,13},
-                {'о' ,14},
-                {'п' ,15},
-                {'р' ,16},
-                {'с' ,17},
-                {'т' ,18},
-                {'у' ,19},
-                {'ф' ,20},
-                {'х' ,21},
-                {'ц' ,22},
-                {'ч' ,23},
-                {'ш' ,24},
-                {'щ' ,25},
-                {'ъ' ,26},
-                {'ы' ,27},
-                {'ь' ,28},
-                {'э' ,29},
-                {'ю' ,30},
-                {'я' ,31 }
+               {'Р°', 0 },
+                {'Р±', 1 },
+                {'РІ', 2 },
+                {'Рі' ,3 },
+                {'Рґ',4 },
+                {'Рµ' ,5 },
+                {'Р¶',6},
+                {'Р·' ,7},
+                {'Рё' ,8},
+                {'Р№' ,9},
+                {'Рє',10 },
+                {'Р»' ,11},
+                {'Рј' ,12},
+                {'РЅ' ,13},
+                {'Рѕ' ,14},
+                {'Рї' ,15},
+                {'СЂ' ,16},
+                {'СЃ' ,17},
+                {'С‚' ,18},
+                {'Сѓ' ,19},
+                {'С„' ,20},
+                {'С…' ,21},
+                {'С†' ,22},
+                {'С‡' ,23},
+                {'С€' ,24},
+                {'С‰' ,25},
+                {'СЉ' ,26},
+                {'С‹' ,27},
+                {'СЊ' ,28},
+                {'СЌ' ,29},
+                {'СЋ' ,30},
+                {'СЏ' ,31 }
 
 
         };
-        static void Main(string[] args) // Меню для выбора действия
+        static void Main(string[] args) // РњРµРЅСЋ РґР»СЏ РІС‹Р±РѕСЂР° РґРµР№СЃС‚РІРёСЏ
         {
-            const string prime_string = "бцияхъпаххъпкцмлчлпежмьктлжцднрльклзнэияхиглякцяльгксняжмкгицияпкхмрлглжшлцктажбглыкйнслйихажмциягайль";
+            const string prime_string = "Р±С†РёСЏС…СЉРїР°С…С…СЉРїРєС†РјР»С‡Р»РїРµР¶РјСЊРєС‚Р»Р¶С†РґРЅСЂР»СЊРєР»Р·РЅСЌРёСЏС…РёРіР»СЏРєС†СЏР»СЊРіРєСЃРЅСЏР¶РјРєРіРёС†РёСЏРїРєС…РјСЂР»РіР»Р¶С€Р»С†РєС‚Р°Р¶Р±РіР»С‹РєР№РЅСЃР»Р№РёС…Р°Р¶РјС†РёСЏРіР°Р№Р»СЊ";
 
             char[] top_words = TopOftenElems(prime_string);
             Console.WriteLine(top_words);
-            for (int i = 0; i < 7; i++) // Перебор символов
+            for (int i = 0; i < 7; i++) // РџРµСЂРµР±РѕСЂ СЃРёРјРІРѕР»РѕРІ
             {
                 for (int j = 0; j < 7; j++)
                 {
@@ -69,22 +69,22 @@ namespace CryptMethodsLab1
 
 
 
-        static char OftenElement(string str) // Поиск самой частой буквы в строке
+        static char OftenElement(string str) // РџРѕРёСЃРє СЃР°РјРѕР№ С‡Р°СЃС‚РѕР№ Р±СѓРєРІС‹ РІ СЃС‚СЂРѕРєРµ
         {
             char[] arr = str.ToCharArray();
             int count, count_max = 0;
             char max_el = 'a';
-            foreach (char c in arr) // Для каждого символа строки
+            foreach (char c in arr) // Р”Р»СЏ РєР°Р¶РґРѕРіРѕ СЃРёРјРІРѕР»Р° СЃС‚СЂРѕРєРё
             {
                 count = 0;
-                foreach (Match m in Regex.Matches(str, c.ToString())) // считаем, сколько раз он появляется в строке.
+                foreach (Match m in Regex.Matches(str, c.ToString())) // СЃС‡РёС‚Р°РµРј, СЃРєРѕР»СЊРєРѕ СЂР°Р· РѕРЅ РїРѕСЏРІР»СЏРµС‚СЃСЏ РІ СЃС‚СЂРѕРєРµ.
                 {
                     count++;
                 }
-                if (count >= count_max) // Если символ появляется чаще других, 
+                if (count >= count_max) // Р•СЃР»Рё СЃРёРјРІРѕР» РїРѕСЏРІР»СЏРµС‚СЃСЏ С‡Р°С‰Рµ РґСЂСѓРіРёС…,  
                 {
                     count_max = count;
-                    max_el = c; // то он - самый частый.
+                    max_el = c; // С‚Рѕ РѕРЅ - СЃР°РјС‹Р№ С‡Р°СЃС‚С‹Р№.
                 }
 
 
@@ -92,7 +92,7 @@ namespace CryptMethodsLab1
             return max_el;
         }
 
-        static char[] TopOftenElems(string str) // Составление топа частых символов в заданной строке
+        static char[] TopOftenElems(string str) // РЎРѕСЃС‚Р°РІР»РµРЅРёРµ С‚РѕРїР° С‡Р°СЃС‚С‹С… СЃРёРјРІРѕР»РѕРІ РІ Р·Р°РґР°РЅРЅРѕР№ СЃС‚СЂРѕРєРµ
         {
             char[] top = new char[32];
             int i = 0;
@@ -105,7 +105,7 @@ namespace CryptMethodsLab1
             return top;
         }
 
-        static (int a, int b) Calculating(byte first, byte second, int param) // Расчет a и b 
+        static (int a, int b) Calculating(byte first, byte second, int param) // Р Р°СЃС‡РµС‚ a Рё b 
         {
             first -= 48;
             second -= 48;
@@ -113,20 +113,20 @@ namespace CryptMethodsLab1
             int b;
             if (param == 0)
             {
-                a = DivByMod(32, (first - second + 32) % 32, ((GetKeyByValue('о') - GetKeyByValue('е')) + 32) % 32);
-                b = (((first - GetKeyByValue('о') * a) % 32) + 32) % 32;
+                a = DivByMod(32, (first - second + 32) % 32, ((GetKeyByValue('Рѕ') - GetKeyByValue('Рµ')) + 32) % 32);
+                b = (((first - GetKeyByValue('Г®') * a) % 32) + 32) % 32;
             }
             else
             {
-                a = DivByMod(32, (second - first + 32) % 32, ((GetKeyByValue('о') - GetKeyByValue('е')) + 32) % 32);
-                b = (((second - GetKeyByValue('е') * a) % 32) + 32) % 32;
+                a = DivByMod(32, (second - first + 32) % 32, ((GetKeyByValue('Рѕ') - GetKeyByValue('Рµ')) + 32) % 32);
+                b = (((second - GetKeyByValue('ГҐ') * a) % 32) + 32) % 32;
 
             }
             return (a, b);
         }
 
 
-        static string Decryption(string str, int a, int b) // Расшифрование 
+        static string Decryption(string str, int a, int b) // Р Р°СЃС€РёС„СЂРѕРІР°РЅРёРµ 
         {
 
             char[] arr = str.ToCharArray();
@@ -139,7 +139,7 @@ namespace CryptMethodsLab1
             return new string(arr);
         }
 
-        static int ReciprocalNumber(int a, int m) // Поиск обратного элемента по модулю m
+        static int ReciprocalNumber(int a, int m) // РџРѕРёСЃРє РѕР±СЂР°С‚РЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РїРѕ РјРѕРґСѓР»СЋ m
         {
             int x = 1;
             while (((a * x) % m) != 1)
@@ -153,7 +153,7 @@ namespace CryptMethodsLab1
             return x;
         }
 
-        static int DivByMod(int m, int c, int d) // Деление по модулю
+        static int DivByMod(int m, int c, int d) // Р”РµР»РµРЅРёРµ РїРѕ РјРѕРґСѓР»СЋ
         {
             int x = 0;
             if (d < 0)
@@ -172,7 +172,7 @@ namespace CryptMethodsLab1
             return ((c + x * m) / d) + m % m;
         }
 
-        static char GetValueByKey(int key) // Получить из алфавита букву по ключу
+        static char GetValueByKey(int key) // РџРѕР»СѓС‡РёС‚СЊ РёР· Р°Р»С„Р°РІРёС‚Р° Р±СѓРєРІСѓ РїРѕ РєР»СЋС‡Сѓ
         {
             foreach (var recordOfDictionary in Alphabet)
             {
@@ -182,7 +182,7 @@ namespace CryptMethodsLab1
             return '1';
         }
 
-        static int GetKeyByValue(char value) // Получить из алфавита ключ по букве
+        static int GetKeyByValue(char value) // РџРѕР»СѓС‡РёС‚СЊ РёР· Р°Р»С„Р°РІРёС‚Р° РєР»СЋС‡ РїРѕ Р±СѓРєРІРµ
         {
             foreach (var recordOfDictionary in Alphabet)
             {
