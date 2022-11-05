@@ -119,7 +119,7 @@ namespace CryptMethodsLab1
             else
             {
                 a = DivByMod(32, (second - first + 32) % 32, ((GetKeyByValue('о') - GetKeyByValue('е')) + 32) % 32);
-                b = (((second - GetKeyByValue('е') * a) % 32) + 32) % 32;
+                b = (((second - GetKeyByValue('о') * a) % 32) + 32) % 32;
 
             }
             return (a, b);
