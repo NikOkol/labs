@@ -114,12 +114,12 @@ namespace CryptMethodsLab1
             if (param == 0)
             {
                 a = DivByMod(32, (first - second + 32) % 32, ((GetKeyByValue('о') - GetKeyByValue('е')) + 32) % 32);
-                b = (((first - GetKeyByValue('î') * a) % 32) + 32) % 32;
+                b = (((first - GetKeyByValue('о') * a) % 32) + 32) % 32;
             }
             else
             {
                 a = DivByMod(32, (second - first + 32) % 32, ((GetKeyByValue('о') - GetKeyByValue('е')) + 32) % 32);
-                b = (((second - GetKeyByValue('å') * a) % 32) + 32) % 32;
+                b = (((second - GetKeyByValue('е') * a) % 32) + 32) % 32;
 
             }
             return (a, b);
