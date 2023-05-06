@@ -1,4 +1,4 @@
-static byte BinaryStringToByte(string str) // Преобразование строки бинарного кода в байт
+static byte BinaryStringToByte(string str) // ГЏГ°ГҐГ®ГЎГ°Г Г§Г®ГўГ Г­ГЁГҐ Г±ГІГ°Г®ГЄГЁ ГЎГЁГ­Г Г°Г­Г®ГЈГ® ГЄГ®Г¤Г  Гў ГЎГ Г©ГІ
 {
     byte b = 0;
     for (int i = str.Length <= 7 ? str.Length - 1 : 7; i >= 0; i--)
@@ -11,7 +11,7 @@ static byte BinaryStringToByte(string str) // Преобразование строки бинарного ко
     return b;
 }
 
-static int BinaryStringToInt(string str) // Преобразование строки бинарного кода в int
+static int BinaryStringToInt(string str) // ГЏГ°ГҐГ®ГЎГ°Г Г§Г®ГўГ Г­ГЁГҐ Г±ГІГ°Г®ГЄГЁ ГЎГЁГ­Г Г°Г­Г®ГЈГ® ГЄГ®Г¤Г  Гў int
 {
     int value = 0;
     for (int i = str.Length - 1; i >= 0; i--)
@@ -24,7 +24,7 @@ static int BinaryStringToInt(string str) // Преобразование строки бинарного кода
     return b;
 }
 
-static string PathInput() // Проверка на существование файла
+static string PathInput() // ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г±ГіГ№ГҐГ±ГІГўГ®ГўГ Г­ГЁГҐ ГґГ Г©Г«Г 
 {
     while (true)
     {
@@ -40,7 +40,7 @@ static string PathInput() // Проверка на существование файла
     }
 }
 
-public static int Int_input() // Чтение integer
+public static int Int_input() // Г—ГІГҐГ­ГЁГҐ integer
 {
     while (true)
     {
@@ -56,7 +56,7 @@ public static int Int_input() // Чтение integer
     }
 }
 
-static byte[] Append(byte[] array, byte item) // Расширение массива байтов
+static byte[] Append(byte[] array, byte item) // ГђГ Г±ГёГЁГ°ГҐГ­ГЁГҐ Г¬Г Г±Г±ГЁГўГ  ГЎГ Г©ГІГ®Гў
 {
     byte[] result = new byte[array.Length + 1];
     array.CopyTo(result, 0);
@@ -64,7 +64,7 @@ static byte[] Append(byte[] array, byte item) // Расширение массива байтов
     return result;
 }
 
-static int GetKeyByValue(char value) // Получить из алфавита ключ по букве
+static int GetKeyByValue(char value) // ГЏГ®Г«ГіГ·ГЁГІГј ГЁГ§ Г Г«ГґГ ГўГЁГІГ  ГЄГ«ГѕГ· ГЇГ® ГЎГіГЄГўГҐ
 {
     foreach (var recordOfDictionary in Alphabet)
     {
@@ -74,7 +74,7 @@ static int GetKeyByValue(char value) // Получить из алфавита ключ по букве
     return -1;
 }
 
-static char GetValueByKey(int key) // Получить из алфавита букву по ключу
+static char GetValueByKey(int key) // ГЏГ®Г«ГіГ·ГЁГІГј ГЁГ§ Г Г«ГґГ ГўГЁГІГ  ГЎГіГЄГўГі ГЇГ® ГЄГ«ГѕГ·Гі
 {
     foreach (var recordOfDictionary in Alphabet)
     {
@@ -86,42 +86,42 @@ static char GetValueByKey(int key) // Получить из алфавита букву по ключу
 
 static Dictionary<char, int> Alphabet = new Dictionary<char, int>
         {
-            {'А', 10},
-            {'Б', 11},
-            {'В', 12},
-            {'Г', 13},
-            {'Д', 14},
-            {'Е', 15},
-            {'Ж', 16},
-            {'З', 17},
-            {'И', 18},
-            {'Й', 19},
-            {'К', 20},
-            {'Л', 21},
-            {'М', 22},
-            {'Н', 23},
-            {'О', 24},
-            {'П', 25},
-            {'Р', 26},
-            {'С', 27},
-            {'Т', 28},
-            {'У', 29},
-            {'Ф', 30},
-            {'Х', 31},
-            {'Ц', 32},
-            {'Ч', 33},
-            {'Ш', 34},
-            {'Щ', 35},
-            {'Ъ', 36},
-            {'Ы', 37},
-            {'Ь', 38},
-            {'Э', 39},
-            {'Ю', 40},
-            {'Я', 41},
+            {'ГЂ', 10},
+            {'ГЃ', 11},
+            {'Г‚', 12},
+            {'Гѓ', 13},
+            {'Г„', 14},
+            {'Г…', 15},
+            {'Г†', 16},
+            {'Г‡', 17},
+            {'Г€', 18},
+            {'Г‰', 19},
+            {'ГЉ', 20},
+            {'Г‹', 21},
+            {'ГЊ', 22},
+            {'ГЌ', 23},
+            {'ГЋ', 24},
+            {'ГЏ', 25},
+            {'Гђ', 26},
+            {'Г‘', 27},
+            {'Г’', 28},
+            {'Г“', 29},
+            {'Г”', 30},
+            {'Г•', 31},
+            {'Г–', 32},
+            {'Г—', 33},
+            {'Г', 34},
+            {'Г™', 35},
+            {'Гљ', 36},
+            {'Г›', 37},
+            {'Гњ', 38},
+            {'Гќ', 39},
+            {'Гћ', 40},
+            {'Гџ', 41},
             {' ', 99}
         };
 
-static int ReciprocalNumber(int a, int m) // Поиск обратного элемента по модулю m
+static int ReciprocalNumber(int a, int m) // ГЏГ®ГЁГ±ГЄ Г®ГЎГ°Г ГІГ­Г®ГЈГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ  ГЇГ® Г¬Г®Г¤ГіГ«Гѕ m
 {
     int x = 1;
     while (((a * x) % m) != 1)
@@ -136,7 +136,7 @@ static int ReciprocalNumber(int a, int m) // Поиск обратного элемента по модулю 
     return x;
 }
 
-static string NotNullStringInput() // Проверка на ненулевую строку
+static string NotNullStringInput() // ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­ГҐГ­ГіГ«ГҐГўГіГѕ Г±ГІГ°Г®ГЄГі
 {
     string input = Console.ReadLine();
     while (input == "")
@@ -147,22 +147,22 @@ static string NotNullStringInput() // Проверка на ненулевую строку
     return input;
 }
 
-static char OftenElement(string str) // Поиск самой частой буквы в строке
+static char OftenElement(string str) // ГЏГ®ГЁГ±ГЄ Г±Г Г¬Г®Г© Г·Г Г±ГІГ®Г© ГЎГіГЄГўГ» Гў Г±ГІГ°Г®ГЄГҐ
 {
     char[] arr = str.ToCharArray();
     int count, count_max = 0;
     char max_el = 'a';
-    foreach (char c in arr) // Для каждого символа строки
+    foreach (char c in arr) // Г„Г«Гї ГЄГ Г¦Г¤Г®ГЈГ® Г±ГЁГ¬ГўГ®Г«Г  Г±ГІГ°Г®ГЄГЁ
     {
         count = 0;
-        foreach (Match m in Regex.Matches(str, c.ToString())) // считаем, сколько раз он появляется в строке.
+        foreach (Match m in Regex.Matches(str, c.ToString())) // Г±Г·ГЁГІГ ГҐГ¬, Г±ГЄГ®Г«ГјГЄГ® Г°Г Г§ Г®Г­ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Гў Г±ГІГ°Г®ГЄГҐ.
         {
             count++;
         }
-        if (count >= count_max) // Если символ появляется чаще других, 
+        if (count >= count_max) // Г…Г±Г«ГЁ Г±ГЁГ¬ГўГ®Г« ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г·Г Г№ГҐ Г¤Г°ГіГЈГЁГµ, 
         {
             count_max = count;
-            max_el = c; // то он - самый частый.
+            max_el = c; // ГІГ® Г®Г­ - Г±Г Г¬Г»Г© Г·Г Г±ГІГ»Г©.
         }
 
 
@@ -170,7 +170,7 @@ static char OftenElement(string str) // Поиск самой частой буквы в строке
     return max_el;
 }
 
-static char[] TopOftenElems(string str) // Составление топа частых символов в заданной строке
+static char[] TopOftenElems(string str) // Г‘Г®Г±ГІГ ГўГ«ГҐГ­ГЁГҐ ГІГ®ГЇГ  Г·Г Г±ГІГ»Гµ Г±ГЁГ¬ГўГ®Г«Г®Гў Гў Г§Г Г¤Г Г­Г­Г®Г© Г±ГІГ°Г®ГЄГҐ
 {
     char[] top = new char[32];
     int i = 0;
@@ -183,7 +183,7 @@ static char[] TopOftenElems(string str) // Составление топа частых символов в за
     return top;
 }
 
-static int DivByMod(int m, int c, int d) // Деление по модулю
+static int DivByMod(int m, int c, int d) // Г„ГҐГ«ГҐГ­ГЁГҐ ГЇГ® Г¬Г®Г¤ГіГ«Гѕ
 {
     int x = 0;
     if (d < 0)
@@ -202,7 +202,7 @@ static int DivByMod(int m, int c, int d) // Деление по модулю
     return ((c + x * m) / d) + m % m;
 }
 
-static string[] FindAllWords(string str) // Составление массива строк из всех слов из текста
+static string[] FindAllWords(string str) // Г‘Г®Г±ГІГ ГўГ«ГҐГ­ГЁГҐ Г¬Г Г±Г±ГЁГўГ  Г±ГІГ°Г®ГЄ ГЁГ§ ГўГ±ГҐГµ Г±Г«Г®Гў ГЁГ§ ГІГҐГЄГ±ГІГ 
 {
     List<string> words = new List<string>();
     string word = "";
@@ -222,4 +222,12 @@ static string[] FindAllWords(string str) // Составление массива строк из всех сл
         }
     }
     return words.ToArray();
+}
+
+static void StartApp()
+{
+    ProcessStartInfo infoStartProcess = new ProcessStartInfo();
+    infoStartProcess.WorkingDirectory = "";
+    infoStartProcess.FileName = "";
+    Process.Start(infoStartProcess);
 }
