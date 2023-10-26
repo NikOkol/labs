@@ -1,0 +1,15 @@
+D:\Git\CP_Host\bin\Debug\net6.0\CP_Host.exe
+D:\Git\CP_Host\bin\Debug\net6.0\CP_Host.deps.json
+D:\Git\CP_Host\bin\Debug\net6.0\CP_Host.runtimeconfig.json
+D:\Git\CP_Host\bin\Debug\net6.0\CP_Host.dll
+D:\Git\CP_Host\bin\Debug\net6.0\CP_Host.pdb
+D:\Git\CP_Host\obj\Debug\net6.0\CP_Host.csproj.AssemblyReference.cache
+D:\Git\CP_Host\obj\Debug\net6.0\CP_Host.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\CP_Host\obj\Debug\net6.0\CP_Host.AssemblyInfoInputs.cache
+D:\Git\CP_Host\obj\Debug\net6.0\CP_Host.AssemblyInfo.cs
+D:\Git\CP_Host\obj\Debug\net6.0\CP_Host.csproj.CoreCompileInputs.cache
+D:\Git\CP_Host\obj\Debug\net6.0\CP_Host.dll
+D:\Git\CP_Host\obj\Debug\net6.0\refint\CP_Host.dll
+D:\Git\CP_Host\obj\Debug\net6.0\CP_Host.pdb
+D:\Git\CP_Host\obj\Debug\net6.0\CP_Host.genruntimeconfig.cache
+D:\Git\CP_Host\obj\Debug\net6.0\ref\CP_Host.dll
