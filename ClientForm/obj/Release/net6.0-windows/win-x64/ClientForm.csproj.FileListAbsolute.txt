@@ -1,0 +1,17 @@
+D:\Git\ClientForm\bin\Release\net6.0-windows\win-x64\ClientForm.exe
+D:\Git\ClientForm\bin\Release\net6.0-windows\win-x64\ClientForm.deps.json
+D:\Git\ClientForm\bin\Release\net6.0-windows\win-x64\ClientForm.runtimeconfig.json
+D:\Git\ClientForm\bin\Release\net6.0-windows\win-x64\ClientForm.dll
+D:\Git\ClientForm\bin\Release\net6.0-windows\win-x64\ClientForm.pdb
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.csproj.AssemblyReference.cache
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.Form1.resources
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.csproj.GenerateResource.cache
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.AssemblyInfoInputs.cache
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.AssemblyInfo.cs
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.csproj.CoreCompileInputs.cache
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.dll
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\refint\ClientForm.dll
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.pdb
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ClientForm.genruntimeconfig.cache
+D:\Git\ClientForm\obj\Release\net6.0-windows\win-x64\ref\ClientForm.dll

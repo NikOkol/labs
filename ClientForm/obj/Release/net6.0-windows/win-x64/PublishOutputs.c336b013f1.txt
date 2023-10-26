@@ -1,0 +1,2 @@
+D:\Git\ClientForm\bin\Release\net6.0-windows\publish\win-x64\ClientForm.pdb
+D:\Git\ClientForm\bin\Release\net6.0-windows\publish\win-x64\ClientForm.exe
